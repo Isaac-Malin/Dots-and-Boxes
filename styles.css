@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background: lightblue;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    height: 97vh;
+}
+
+.players {
+    display: grid;
+    grid-row: 1/7;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.dot-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 70vw;
+}
+
+button {
+    display: grid;
+    color: black;
+    font-size: 5em;
+    background: none;
+    border: none;
+}
+
+
+
+
