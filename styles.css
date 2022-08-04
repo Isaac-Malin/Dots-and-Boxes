@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    background: lightblue;
+    
 }
 
 .container {
@@ -33,13 +33,16 @@ p {
 .dot-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
 }
 
-.dot {
-    display: grid;
-    border: 2px solid white;
+.border-left:hover {
+    border-left: 2px solid lightgray
 }
+
+.right {
+    border-right: 2px solid white;
+}
+
 
 .btn {
     justify-content: start;

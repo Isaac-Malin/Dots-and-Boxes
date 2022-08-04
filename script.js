@@ -11,10 +11,22 @@
 
 // repeat step 1 until the 
 
-const dots = document.querySelectorAll(".btn")
+// select button and save in var -> when button is click update color of border
 
-dots.forEach((button) => {
-    button.addEventListener("click", () => {
-        button.classList.add(".dot").style.borderColor = "blue";
+const borderLeft = document.querySelectorAll(".border-left")
+const borderRIght = document.querySelectorAll(".right");
+
+
+borderLeft.forEach((border) => {
+    border.addEventListener("click", () => {
+        border.style.borderLeft = "1px solid blue";
     })
 })
+
+borderRIght.forEach((rightBorder) => {
+    rightBorder.addEventListener("click", () => {
+        rightBorder.style.borderRight = "1px solid green"
+    })
+})
+
+
