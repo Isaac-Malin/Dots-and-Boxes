@@ -7,19 +7,18 @@
 .container {
     display: grid;
     justify-content: center;
-    height: 97vh;
+    height: 94vh;
 }
 
 .players {
     display: grid;
     grid-row: 1/7;
-    justify-content: center;
     align-items: center;
     margin-right: 50px;
 }
 
 
-.green {
+.green { 
     color: green;
 }
 
@@ -34,17 +33,26 @@ p {
 .dot-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 70vw;
+
 }
 
-button {
+.dot {
     display: grid;
-    color: black;
-    font-size: 5em;
-    background: none;
-    border: none;
+    border: 2px solid white;
 }
 
+.btn {
+    justify-content: start;
+    align-items: flex-end;
+    font-size: 5em;
+    position: relative;
+    right: 49px;
+    top: 74px;
+    border: none;
+    background: none;
+    width: 5vw;
+    height: 10vh;
+}
 
 
 
