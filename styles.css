@@ -33,14 +33,11 @@ p {
 .dot-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
 
-.border-left:hover {
-    border-left: 2px solid lightgray
-}
-
-.right {
-    border-right: 2px solid white;
+.dot {
+    border: 1px solid #F5F5F5
 }
 
 
