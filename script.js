@@ -28,38 +28,118 @@
 // top side 4st row Y coords = 586-599
 // top side 5st row Y coords = 735-750
 
-//const borderLeft = document.querySelectorAll(".border-left")
-//const borderRight = document.querySelectorAll(".right");
+
+
+
 const boxs = document.querySelectorAll(".dot");
+const colors = document.querySelectorAll(".color");
+let isBlue = true
+
+colors.forEach((color) => {
+  color.addEventListener("click", () => {
+    if (color.innerHTML.includes("Switch")) {
+      isBlue = !isBlue
+    }
+  });
+});
 
 boxs.forEach((box) => {
   box.addEventListener("click", (e) => {
     const boxXCoords = e.pageX;
     const boxYCoords = e.pageY;
-    if (boxXCoords > 520 && boxXCoords < 531) {
-      box.style.borderLeft = "2px solid blue";
-    } else if (boxXCoords > 696 && boxXCoords < 710) {
-      box.style.borderLeft = "2px solid blue";
-    } else if (boxXCoords > 872 && boxXCoords < 884) {
-      box.style.borderLeft = "2px solid blue";
-    } else if (boxXCoords > 1048 && boxXCoords < 1060) {
-      box.style.borderLeft = "2px solid blue";
-    } else if (boxXCoords > 1224 && boxXCoords < 1242) {
-      box.style.borderLeft = "2px solid blue";
-    } else if (boxYCoords > 145 && boxYCoords < 158) {
-      box.style.borderTop = "2px solid green";
-    } else if (boxYCoords > 292 && boxYCoords < 306) {
-      box.style.borderTop = "2px solid green";
-    } else if (boxYCoords > 439 && boxYCoords < 450) {
-      box.style.borderTop = "2px solid green";
-    } else if (boxYCoords > 586 && boxYCoords < 599) {
-      box.style.borderTop = "2px solid green";
-    } else if (boxYCoords > 735 && boxYCoords < 750) {
-      box.style.borderTop = "2px solid green";
-    } else if (boxXCoords < 1399 && boxXCoords > 1389) {
-      box.style.borderRight = "2px solid green";
-    } else if (boxYCoords < 879 && boxYCoords > 871) {
-      box.style.borderBottom = "2px solid green";
+
+    if (boxXCoords > 520 && boxXCoords < 531 && isBlue) {
+      box.style.borderLeft = `2px solid blue`;
+    } else if (boxXCoords > 696 && boxXCoords < 710 && isBlue) {
+      box.style.borderLeft = `2px solid blue`;
+    } else if (boxXCoords > 872 && boxXCoords < 884 && isBlue) {
+      box.style.borderLeft = `2px solid blue`;
+    } else if (boxXCoords > 1048 && boxXCoords < 1060 && isBlue) {
+      box.style.borderLeft = `2px solid blue`;
+    } else if (boxXCoords > 1224 && boxXCoords < 1242 && isBlue) {
+      box.style.borderLeft = `2px solid blue`;
+    } else if (boxYCoords > 145 && boxYCoords < 158 && isBlue) {
+      box.style.borderTop = `2px solid blue`;
+    } else if (boxXCoords > 687 && boxXCoords < 691 && isBlue) {
+      box.style.borderRight = `2px solid blue`;
+    } else if (boxXCoords > 862 && boxXCoords < 867 && isBlue) {
+      box.style.borderRight = `2px solid blue`;
+    } else if(boxXCoords > 1037 && boxXCoords < 1043 && isBlue) {
+      box.style.borderRight = `2px solid blue`;
+    } else if(boxXCoords > 1213 && boxXCoords < 1219 && isBlue) {
+      box.style.borderRight = `2px solid blue`;
+    } else if (boxYCoords > 292 && boxYCoords < 306 && isBlue) {
+      box.style.borderTop = `2px solid blue`;
+    } else if (boxYCoords > 439 && boxYCoords < 450 && isBlue) {
+      box.style.borderTop = `2px solid blue`;
+    } else if (boxYCoords > 586 && boxYCoords < 599 && isBlue) {
+      box.style.borderTop = `2px solid blue`;
+    } else if (boxYCoords > 735 && boxYCoords < 750 && isBlue) {
+      box.style.borderTop = `2px solid blue`;
+    } else if (boxXCoords < 1399 && boxXCoords > 1389 && isBlue) {
+      box.style.borderRight = `2px solid blue`;
+    } else if (boxYCoords < 879 && boxYCoords > 871 && isBlue) {
+      box.style.borderBottom = `2px solid blue`;
+    } else if (boxYCoords < 288 && boxYCoords > 277 && isBlue) {
+      box.style.borderBottom = `2px solid blue`;
+    } else if (boxYCoords < 429 && boxYCoords > 422 && isBlue) {
+      box.style.borderBottom = `2px solid blue`;
+    } else if (boxYCoords < 575 && boxYCoords > 568 && isBlue) {
+      box.style.borderBottom = `2px solid blue`;
+    } else if (boxYCoords < 721 && boxYCoords > 713 && isBlue) {
+      box.style.borderBottom = `2px solid blue`;
     }
+
+    if (boxXCoords > 520 && boxXCoords < 531 && !isBlue) {
+      box.style.borderLeft = `2px solid green`;
+    } else if (boxXCoords > 696 && boxXCoords < 710 && !isBlue) {
+      box.style.borderLeft = `2px solid green`;
+    } else if (boxXCoords > 872 && boxXCoords < 884 && !isBlue) {
+      box.style.borderLeft = `2px solid green`;
+    } else if (boxXCoords > 1048 && boxXCoords < 1060 && !isBlue) {
+      box.style.borderLeft = `2px solid green`;
+    } else if (boxXCoords > 1224 && boxXCoords < 1242 && !isBlue) {
+      box.style.borderLeft = `2px solid green`;
+    } else if (boxYCoords > 145 && boxYCoords < 158 && !isBlue) {
+      box.style.borderTop = `2px solid green`;
+    } else if (boxYCoords > 292 && boxYCoords < 306 && !isBlue) {
+      box.style.borderTop = `2px solid green`;
+    } else if (boxYCoords > 439 && boxYCoords < 450 && !isBlue) {
+      box.style.borderTop = `2px solid green`;
+    } else if (boxYCoords > 586 && boxYCoords < 599 && !isBlue) {
+      box.style.borderTop = `2px solid green`;
+    } else if (boxYCoords > 735 && boxYCoords < 750 && !isBlue) {
+      box.style.borderTop = `2px solid green`;
+    } else if (boxXCoords < 1399 && boxXCoords > 1389 && !isBlue) {
+      box.style.borderRight = `2px solid green`;
+    } else if (boxXCoords > 687 && boxXCoords < 691 && !isBlue) {
+      box.style.borderRight = `2px solid green`;
+    } else if (boxXCoords > 862 && boxXCoords < 867 && !isBlue) {
+      box.style.borderRight = `2px solid green`;
+    } else if(boxXCoords > 1037 && boxXCoords < 1043 && !isBlue) {
+      box.style.borderRight = `2px solid green`;
+    } else if(boxXCoords > 1213 && boxXCoords < 1219 && !isBlue) {
+      box.style.borderRight = `2px solid green`;
+    } else if (boxYCoords < 879 && boxYCoords > 871 && !isBlue) {
+      box.style.borderBottom = `2px solid green`;
+    } else if (boxYCoords < 288 && boxYCoords > 277 && !isBlue) {
+      box.style.borderBottom = `2px solid green`;
+    } else if (boxYCoords < 429 && boxYCoords > 422 && !isBlue) {
+      box.style.borderBottom = `2px solid green`;
+    } else if (boxYCoords < 575 && boxYCoords > 568 && !isBlue) {
+      box.style.borderBottom = `2px solid green`;
+    } else if (boxYCoords < 721 && boxYCoords > 713 && !isBlue) {
+      box.style.borderBottom = `2px solid green`;
+    }
+
+    if (box.style.borderBottom.includes("solid") && box.style.borderTop.includes("solid") && box.style.borderLeft.includes("solid") && box.style.borderRight.includes("solid") && isBlue ) {
+      box.style.backgroundColor = "blue";
+    }
+    if (box.style.borderBottom.includes("solid") && box.style.borderTop.includes("solid") && box.style.borderLeft.includes("solid") && box.style.borderRight.includes("solid") && !isBlue ) {
+      box.style.backgroundColor = "green";
+    }
+
+
+
   });
 });

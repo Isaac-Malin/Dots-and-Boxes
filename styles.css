@@ -1,20 +1,33 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+    background-color: black;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: grid;
     justify-content: center;
-    height: 94vh;
+    height: 93vh;
 }
+
 
 .players {
     display: grid;
     grid-row: 1/7;
     align-items: center;
     margin-right: 50px;
+    margin-top: 45px;
+}
+
+.dot {
+    display: grid;
+    border: 1px solid #333333;
 }
 
 
@@ -26,6 +39,16 @@
     color: blue;
 }
 
+.color {
+    background-image: linear-gradient(to right, green, blue);
+    border: none;
+    height: 4vh;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px green;
+}
+
 p {
     font-size: 1.5em;
 }
@@ -33,11 +56,7 @@ p {
 .dot-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-}
-
-.dot {
-    border: 1px solid #F5F5F5
+    gap: 2px;
 }
 
 
@@ -52,6 +71,7 @@ p {
     background: none;
     width: 5vw;
     height: 10vh;
+    color: white;
 }
 
 
